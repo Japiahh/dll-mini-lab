@@ -1,30 +1,24 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
-
 struct node {
     string data;
     node* prev;
     node* next;
-
     node(string n) {
         data = n;
         prev = nullptr;
         next = nullptr;
     }
 };
-
 class list {
 public:
     node* head;
     node* tail;
-
     list() {
         head = nullptr;
         tail = nullptr;
     }
-
     ~list() {
         node* bantu = head;
         while (bantu != nullptr) {
@@ -33,7 +27,6 @@ public:
             delete hapusnode;
         }
     }
-
     void tambah(string n) {
         node* baru = new node(n);
         if (head == nullptr) {
@@ -45,7 +38,6 @@ public:
         baru->prev = tail;
         tail = baru;
     }
-
     void cetakmaju() {
         node* bantu = head;
         while (bantu != nullptr) {
@@ -57,7 +49,6 @@ public:
         }
         cout << "\n";
     }
-
     void cetakmundur() {
         node* bantu = tail;
         while (bantu != nullptr) {
@@ -69,7 +60,6 @@ public:
         }
         cout << "\n";
     }
-
     void sisip(string target, string n) {
         node* bantu = head;
         while (bantu != nullptr && bantu->data != target) {
@@ -88,7 +78,6 @@ public:
         }
         bantu->next = baru;
     }
-
     void hapus(string n) {
         node* bantu = head;
         while (bantu != nullptr && bantu->data != n) {
@@ -118,7 +107,6 @@ public:
         delete bantu;
     }
 };
-
 void tugas() {
     list l;
     l.tambah("Song A");
@@ -126,37 +114,29 @@ void tugas() {
     l.tambah("Song C");
     l.tambah("Song D");
     l.tambah("Song E");
-
     cout << "awal:\n";
     l.cetakmaju();
-
     cout << "maju:\n";
     l.cetakmaju();
-
     cout << "mundur:\n";
     l.cetakmundur();
-
     cout << "sisip Song X:\n";
     l.sisip("Song B", "Song X");
     l.cetakmaju();
     l.cetakmundur();
-
     cout << "hapus Song C:\n";
     l.hapus("Song C");
     l.cetakmaju();
     l.cetakmundur();
 }
-
 int main() {
     int pilih = 0;
     list manual;
-
     while (pilih != 3) {
         cout << "menu:\n1. tugas 1-6\n2. manual\n3. keluar\npilih: ";
         if (!(cin >> pilih)) {
             return 0;
         }
-
         if (pilih == 1) {
             tugas();
         } else if (pilih == 2) {
@@ -166,7 +146,6 @@ int main() {
                 if (!(cin >> opsi)) {
                     return 0;
                 }
-
                 if (opsi == 1) {
                     string n;
                     cout << "data: ";
@@ -194,6 +173,4 @@ int main() {
             }
         }
     }
-
-    return 0;
 }

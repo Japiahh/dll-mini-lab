@@ -1,11 +1,11 @@
 # REFLECTION
 ## Builder
 Name: 103012500055 - Mochamad Rizkyka Zainal Rafi`i
-My main contribution: Membuat kode utama di main.cpp untuk struktur node, traversal maju-mundur, serta fungsi sisip dan hapus.
-What I learned about next and prev: Pointer next untuk maju dan prev untuk mundur. Kalau salah satu tidak disambung dengan benar, traversal dua arah bakal putus.
-The hardest part: Mengatur urutan penyambungan pointer saat sisip di tengah dan hapus node.
-What AI helped me with: Referensi awal struktur node.
-What I changed or fixed myself: Menyesuaikan logika, merapikan kode, dan memastikan program berjalan lancar saat dikompilasi.
+My main contribution                    : Membuat kode utama di main.cpp untuk struktur node, traversal maju-mundur, serta fungsi sisip dan hapus.
+What I learned about next and prev      : Pointer next untuk maju dan prev untuk mundur. Kalau salah satu tidak disambung dengan benar, traversal dua arah bakal putus.
+The hardest part                        : Mengatur urutan penyambungan pointer saat sisip di tengah dan hapus node.
+What AI helped me with                  : Referensi awal struktur node.
+What I changed or fixed myself          : Menyesuaikan logika, merapikan kode, dan memastikan program berjalan lancar saat dikompilasi.
 GitHub Issue / PR / Commit I contributed: 
 ```bash
 Update README.md formatting and content

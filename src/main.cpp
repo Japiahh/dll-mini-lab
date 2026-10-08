@@ -78,35 +78,7 @@ public:
         }
         bantu->next = baru;
     }
-    void hapus(string n) {
-        node* bantu = head;
-        while (bantu != nullptr && bantu->data != n) {
-            bantu = bantu->next;
-        }
-        if (bantu == nullptr) {
-            return;
-        }
-        if (bantu == head) {
-            head = bantu->next;
-            if (head != nullptr) {
-                head->prev = nullptr;
-            } else {
-                tail = nullptr;
-            }
-        } else if (bantu == tail) {
-            tail = bantu->prev;
-            if (tail != nullptr) {
-                tail->next = nullptr;
-            } else {
-                head = nullptr;
-            }
-        } else {
-            bantu->prev->next = bantu->next;
-            bantu->next->prev = bantu->prev;
-        }
-        delete bantu;
-    }
-};
+
 void tugas() {
     list l;
     l.tambah("Song A");

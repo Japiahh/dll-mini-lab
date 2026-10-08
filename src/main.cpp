@@ -156,6 +156,7 @@ int main() {
                     cout << "data: ";
                     cin >> n;
                     manual.tambah(n);
+                    manual.cetakmaju();
                 } else if (opsi == 2) {
                     cout << "maju:\n";
                     manual.cetakmaju();
@@ -169,11 +170,13 @@ int main() {
                     cout << "data: ";
                     cin >> n;
                     manual.sisip(target, n);
+                    manual.cetakmaju();
                 } else if (opsi == 5) {
                     string n;
                     cout << "data: ";
                     cin >> n;
                     manual.hapus(n);
+                    manual.cetakmaju();
                 }
             }
         }

@@ -4,8 +4,8 @@ Repositori ini dibuat untuk tugas kelompok praktikum Struktur Data mengenai Doub
 
 ## Anggota Kelompok
 - 103012500055 - Mochamad Rizkyka Zainal Rafi`i (Builder)
-- (Tester)
-- (Reviewer)
+- 103012500295 - Lazhi Nadri Ramadhan (Tester)
+- 103012500331 - Nugraha Akmal Yoga (Reviewer)
 
 ## Struktur Folder
 - src/main.cpp : Program utama untuk tugas 1 sampai 6 serta menu manual.

@@ -69,6 +69,7 @@ public:
         cout << "\n";
     }
 };
+
 int main() {
     browser b("google.com");
     cout << "buka: google.com\n";

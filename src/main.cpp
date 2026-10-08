@@ -132,6 +132,11 @@ void tugas() {
 int main() {
     int pilih = 0;
     list manual;
+    list manual;
+    manual.tambah("A");
+    manual.tambah("B");
+    manual.tambah("C");
+    manual.tambah("D");
     while (pilih != 3) {
         cout << "menu:\n1. tugas 1-6\n2. manual\n3. keluar\npilih: ";
         if (!(cin >> pilih)) {
